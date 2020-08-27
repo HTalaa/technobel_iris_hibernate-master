@@ -31,6 +31,8 @@ public class Book implements Serializable {
             //inverseJoinColumns = { @JoinColumn(name = "author_id") }
     )
     Set<Author> authors = new HashSet<>();
+    @OneToMany(mappedBy = "book")
+    Set<UserBook> borrow;
     public Book() {
     }
 }
