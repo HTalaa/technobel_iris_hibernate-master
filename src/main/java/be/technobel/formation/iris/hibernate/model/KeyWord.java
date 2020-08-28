@@ -15,6 +15,6 @@ public class KeyWord implements Serializable {
     private Long id;
     @Column
     private String word;
-    @Column
-    private Book book;
+   // @Column
+   // private Book book;
 }

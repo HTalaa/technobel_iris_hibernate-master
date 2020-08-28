@@ -25,9 +25,9 @@ public class User implements Serializable {
     private String email;
     @Column
     private String password;
-    @Column
-    private Address address;
+   // @Column
+ //   private Address address;
 
-    @OneToMany(mappedBy = "user")
-    Set<UserBook> borrow;
+  /*  @OneToMany(mappedBy = "user")
+    Set<UserBook> borrow;*/
 }

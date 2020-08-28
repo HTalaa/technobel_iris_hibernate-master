@@ -16,8 +16,8 @@ public class Editor implements Serializable {
     private Long id;
     @Column
     private String label;
-    @Column
-    private Address address;
+   // @Column
+  //  private Address address;
 
     public Editor() {
     }

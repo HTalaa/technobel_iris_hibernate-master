@@ -21,8 +21,8 @@ public class Book implements Serializable {
     private String title;
     @Column
     private int number_page;
-    @Column
-    private Editor editor;
+   // @Column
+   // private Editor editor;
     @ManyToMany(cascade = { CascadeType.ALL })
     @JoinTable(
             name = "Book_Author"
@@ -31,8 +31,8 @@ public class Book implements Serializable {
             //inverseJoinColumns = { @JoinColumn(name = "author_id") }
     )
     Set<Author> authors = new HashSet<>();
-    @OneToMany(mappedBy = "book")
-    Set<UserBook> borrow;
+   // @OneToMany(mappedBy = "book")
+    //Set<UserBook> borrow;
     public Book() {
     }
 }
